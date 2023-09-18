@@ -30,9 +30,6 @@
 		<div id="home-footer">
 			<p>
 				&copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a>{{ .Site.Params.footerCopyright | safeHTML }}
-				{{/*{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }}*/}}
-				&#183; <a href="{{ "posts/index.xml" | absLangURL }}" target="_blank" title="rss">{{ partial "svg.html" (dict "context" . "name" "rss") }}</a>
-				{{/*{{ end }}*/}}
 			</p>
 		</div>
 	</div>
