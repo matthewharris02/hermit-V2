@@ -10,6 +10,7 @@
 			{{ .Content }}
 		</div>
 		{{- end }}
+		{{- range .Data.Pages.GroupByLastmod "2006-01" }}
 		<div class="posts-group">
 			<div class="post-year" id="{{ .Key }}">{{ .Key }}</div>
 			<ul class="posts-list">
@@ -22,6 +23,7 @@
 				{{- end }}
 			</ul>
 		</div>
+		{{- end }}
 	</main>
 {{ end }}
 
