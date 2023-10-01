@@ -10,17 +10,17 @@
 			{{ .Content }}
 		</div>
 		{{- end }}
-		<div class="posts-group">
-			<ul class="posts-list">
+		<div class='posts-list-wiki'>
+			<ul class="posts-lists-wiki">
 				{{- range .Pages }}
-				<li class="post-item">
+				<li class="post-item-wiki">
 					<a href="{{.Permalink}}">
 						<span class="post-title">{{.Title}}</span>
 					</a>
 				</li>
 				{{- end }}
 			</ul>
-		</div>
+			</div>
 	</main>
 {{ end }}
 

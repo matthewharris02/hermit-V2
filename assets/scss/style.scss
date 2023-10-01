@@ -488,6 +488,55 @@ p.img-404 {
   }
 }
 
+
+// list-wiki.html
+//
+
+.posts-list-wiki {
+  display: flex;
+  margin-bottom: 1.9em;
+  line-height: normal;
+
+  .post-year {
+    padding-top: 6px;
+    margin-right: 1.8em;
+    font-size: 1.6em;
+    @include dimmed;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .posts-lists-wiki {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .post-item-wiki {
+    border-bottom: 1px $highlight-grey dashed;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 12px 0;
+    }
+  }
+
+  .post-day {
+    flex-shrink: 0;
+    margin-left: 1em;
+    @include dimmed;
+  }
+}
+
+
+
+
 // single.html
 //
 .bg-img {
