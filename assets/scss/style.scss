@@ -492,16 +492,16 @@ p.img-404 {
 // list-wiki.html
 //
 
-
 .posts-group-wiki {
   display: flex;
   margin-bottom: 1.9em;
   line-height: normal;
 
-  .post-tag-wiki {
+    .post-tag-wiki {
     padding-top: 6px;
     margin-right: 1.8em;
     font-size: 1.6em;
+    flex-basis: 25%;
     @include dimmed;
 
     &:hover {
@@ -534,8 +534,6 @@ p.img-404 {
     @include dimmed;
   }
 }
-
-
 
 // single.html
 //
