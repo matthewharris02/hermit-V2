@@ -492,12 +492,13 @@ p.img-404 {
 // list-wiki.html
 //
 
-.posts-list-wiki {
+
+.posts-group-wiki {
   display: flex;
   margin-bottom: 1.9em;
   line-height: normal;
 
-  .post-year {
+  .post-tag-wiki {
     padding-top: 6px;
     margin-right: 1.8em;
     font-size: 1.6em;
@@ -509,7 +510,7 @@ p.img-404 {
     }
   }
 
-  .posts-lists-wiki {
+  .posts-list-wiki {
     flex-grow: 1;
     margin: 0;
     padding: 0;
@@ -527,13 +528,12 @@ p.img-404 {
     }
   }
 
-  .post-day {
+  .post-day-wiki {
     flex-shrink: 0;
     margin-left: 1em;
     @include dimmed;
   }
 }
-
 
 
 

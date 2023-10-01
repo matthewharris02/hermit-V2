@@ -10,18 +10,19 @@
 			{{ .Content }}
 		</div>
 		{{- end }}
-		{{- range .Data.Pages.GroupByParam "group_tag"}}
-		<div class='posts-group'>
-			<ul class="posts-list">
+		{{- range .Pages.GroupByParam "group_tag" }}
+		<div class='posts-group-wiki'>
+			<div class="post-tag-wiki" id="{{ .Key }}">{{ .Key }}</div>
+			<ul class="posts-list-wiki">
 				{{- range .Pages }}
-				<li class="post-item">
+				<li class="post-item-wiki">
 					<a href="{{.Permalink}}">
 						<span class="post-title">{{.Title}}</span>
 					</a>
 				</li>
 				{{- end }}
 			</ul>
-			</div>
+		</div>
 		{{- end}}
 	</main>
 {{ end }}
