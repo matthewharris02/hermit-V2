@@ -29,6 +29,11 @@ other = "Newer"
 [older]
 other = "Older"
 
+[next]
+other = "next"
+
+[previous]
+other = "previous"
 # partials/header.html
 #
 [menu]

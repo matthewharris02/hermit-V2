@@ -29,6 +29,12 @@ other = "Suivant"
 [older]
 other = "Précédent"
 
+
+[next]
+other = "Suivant"
+
+[previous]
+other = "Précédent"
 # partials/header.html
 #
 [menu]
