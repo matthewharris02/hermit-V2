@@ -1,8 +1,8 @@
-name = "Hermit-V2-fork"
+name = "Hermit-v2-fork"
 license = "MIT"
-licenselink = "https://github.com/matthewharris02/hermit/blob/master/LICENSE"
+licenselink = "https://github.com/matthewharris02/hermit-v2-fork/blob/main/LICENSE"
 description = "A minimal and fast hugo theme for bloggers."
-homepage = "https://github.com/matthewharris02/hermit-V2"
+homepage = "https://github.com/matthewharris02/hermit-v2-fork"
 tags = ["blog", "minimal", "dark", "responsive"]
 features = [
   "single column",
@@ -15,7 +15,7 @@ features = [
 min_version = 0.43
 
 [author]
-  name = "Matthew"
+  name = "Matthew Harris"
 [original]
   name = "Track3"
   homepage = "https://www.xxxlbox.com"
