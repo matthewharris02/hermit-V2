@@ -1,0 +1,32 @@
+{{ define "header" }}
+{{ partialCached "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>{{ .Title }}</h1>
+		{{- if .Content }}
+		<div class="content">
+			{{ .Content }}
+		</div>
+		{{- end }}
+		{{- range .Pages.GroupByParam "group_tag" }}
+		<div class='posts-group-wiki'>
+			<div class="post-tag-wiki" id="{{ .Key }}">{{ .Key }}</div>
+			<ul class="posts-list-wiki">
+				{{- range .Pages }}
+				<li class="post-item-wiki">
+					<a href="{{.Permalink}}">
+						<span class="post-title">{{.Title}}</span>
+					</a>
+				</li>
+				{{- end }}
+			</ul>
+		</div>
+		{{- end}}
+	</main>
+{{ end }}
+
+{{ define "footer" }}
+{{ partialCached "footer.html" . }}
+{{ end }}
