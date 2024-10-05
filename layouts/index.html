@@ -8,8 +8,7 @@
 	{{- end -}}
 {{ end }}
 
-{{ define "main" }}
-	{{- if (or .Site.Params.images .Site.Params.bgImg) }}
+{{ define "main" }} {{- if (or .Site.Params.images .Site.Params.bgImg) }}
 	<div class="bg-img"></div>
 	{{- end }}
 	<div id="spotlight" class="animated fadeIn">
@@ -18,7 +17,7 @@
 			{{- with .Site.Params.homeSubtitle }}
 			<p id="home-subtitle">{{.}}</p>
 			{{- end }}
-			{{- with .Site.Params.social }}
+			{{- with .Site.Params.socialLinks }}
 			<div id="home-social">
 				{{ partialCached "social-icons.html" . }}
 			</div>
@@ -27,12 +26,6 @@
 				{{ partialCached "menu.html" . }}
 			</nav>
 		</div>
-		<div id="home-footer">
-			<p>
-				&copy; AA AA AA {{ now.Format "2006" }}
-				&#183; <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a>
-				&#183; {{ .Site.Params.footerCopyright | safeHTML }}
-			</p>
-		</div>
+		<div id="home-footer">{{ partialCached "single-footer.html" . }}</div>
 	</div>
 {{ end }}
